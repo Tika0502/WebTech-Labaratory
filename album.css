@@ -1,0 +1,74 @@
+/* *{
+    border: thin solid red;
+} */
+
+album{
+    border: thin solid black;
+    border-radius: 0.5em;
+    box-shadow: 0.25em 0.25em 0.5em black;
+    display: block;
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin: 1em auto 1em auto;
+    padding: 0.5em;
+    width: fit-content;
+    counter-reset: track-number;
+}
+
+artist, album > title, year{
+    display: inline-block;
+    font-size: x-large;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+artist::after{
+    content: "\2013"
+}
+
+year::before{
+    content: "(";
+}
+
+year::after{
+    content: ")";
+}
+
+track{
+    display: table;
+    width: 100%;
+}
+
+/* track{
+    display: table-row;
+} */
+
+track > title, length{
+    display: table-cell;
+    padding: 0.25em;
+}
+
+track > title::before{
+    /* border: thin solid green; */
+    content: counter(track-number) ".";
+    counter-increment: track-number;
+    display: inline-block;
+    text-align: right;
+    margin-right: 0.25em;
+    width: 2em;
+}
+
+length{
+    text-align: right;
+}
+
+track:nth-child(odd){
+    background-color: lightgray;
+}
+
+track{
+    transition: background-color 0.5s ease font-weight 0.2em ease;
+}
+track:hover{
+    background-color: gold;
+    cursor: pointer;
+}
