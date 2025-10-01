@@ -1,0 +1,79 @@
+movies {
+    display: block;
+    margin: 1em;
+    border: solid purple;
+    border-radius: 0.5em;
+    box-shadow: 0.23em 0.25em 0.5em purple;
+    padding: 0.5em;
+    width: fit-content;
+    margin: 1em auto 1em auto;
+    background-color: aliceblue;
+}   
+
+movie {
+    display: list-item;
+    margin: 1em 2em;
+}
+
+title {
+    display: none;
+}
+
+title:lang(en) {
+    display: inline-block;
+}
+
+year::before {
+    content: "("
+}
+
+year::after {
+    content: ")";
+}
+
+movie:is([mpa-rating=R], [mpa-rating=NC-17]) > :is(title, year){
+    color: red;
+    font-weight: bold;
+}
+
+genre {
+    background-color: mediumslateblue;
+    border-radius: 9999px;
+    color: white;
+    font-size: small;
+    margin-right: 0.1em;
+    padding: 0.1em 0.5em;
+}
+
+rating {
+    background-color: hotpink;
+    border-radius: 0.25em;
+    color: white;
+    padding: 0.25em;
+}
+
+rating::after {
+    content: "/10";
+
+}
+
+votes::before {
+    content: "from";
+}
+
+votes::after {
+    content: " :ratings"
+}
+
+movie:hover {
+    background-color: lightblue;
+}
+
+movie:hover::after {
+    background-color: gold;
+    border-radius: 0.25em;
+    color: purple;
+    content: "https://www.imdb.com/title/tt" attr(id);
+    font-family: monospace;
+    padding: 0.25em;
+}
