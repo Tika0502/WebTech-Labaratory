@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE movies SYSTEM "movies.dtd">
+<?xml-stylesheet href="movies.css" type="text/css"?>
+
+<movies>
+    <movie id="0062622" mpa-rating="G">
+        <title xml:lang="en">2001: A Space Odyssey</title>    
+        <title xml:lang="hu">2001: Űrodüsszeia</title>
+        <title xml:lang="fr">2001, L'Odyssée de l'espace</title>
+        <year>1968</year>
+        <genre>sci-fi</genre>
+        <rating>8.3</rating>
+        <votes>731706</votes>
+    </movie>
+    <movie id="0078748" mpa-rating="R">
+        <title xml:lang="hu">Alien A nyolcadik utas: a Halál</title>
+        <title xml:lang="jp">エイリアン</title>
+        <year>1979</year>
+        <genre>horror sci-fi</genre>
+        <rating>8.5</rating>
+        <votes>981779</votes>
+    </movie>
+    <movie id="0084844" mpa-rating="G">
+        <title xml:lang="en">Monty Python and the Holy Grail</title>
+        <title xml:lang="hu">Gyalog galopp</title>
+        <title xml:lang="sp">Monty Python e il Sacro Graal</title>
+        <year>1975</year>
+        <genre>adventure comedy fantasy</genre>
+        <rating>8.2</rating>
+        <votes>576812</votes>
+    </movie>
+    <movie id="0092968" mpa-rating="G">
+        <title xml:lang="en">Psycho</title>
+        <year>1960</year>
+        <genre>horror mystery thriller</genre>
+        <rating>8.5</rating>
+        <votes>730736</votes>
+    </movie>
+    <movie id="0010155" mpa-rating="G">
+        <title xml:lang="en">Star Wars: Episode V - The Empire Strikes Back</title>
+        <title xml:lang="hu">A Birodalom visszavág/title</title>
+        <year>1980</year>
+        <genre>action adventure fantasy</genre>
+        <rating>8.7</rating>
+        <votes>1402310</votes>
+    </movie>
+    <movie id="0011419" mpa-rating="G">
+        <title xml:lang="en">The Dark Knight</title>
+        <title xml:lang="hu">A sötét lovag</title>
+        <title xml:lang="gr">Ο σκοτεινός ιππότης</title>
+        <year>2008</year>
+        <genre>action crime drama</genre>
+        <rating>9.0</rating>
+        <votes>2924774</votes>
+    </movie>
+</movies>
