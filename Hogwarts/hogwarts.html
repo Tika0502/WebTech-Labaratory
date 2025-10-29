@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hogwarts.css">
+    <title>Hogwarts</title>
+</head>
+<body>
+    <h1>Hogwarts Registration Form</h1>
+    <form class="fancy-form" action="https://webhook.site/2b690f68-bffa-404f-8544-e2f77380665a" method="post" enctype="multipart/form-data">
+        <div>
+            <label for="">Name</label>
+            <input id="name" name="name" type="text" placeholder="e.g., Harry James Potter" required>
+        </div>
+        <div>
+            <label for="dob">Date of Birth</label>
+            <input id="dob" name="dob" type="date" required>
+        </div>
+        <div>
+            <label for="house">House</label>
+            <select name="house" id="house" required>
+                <option value="">--Please choose an option</option>
+                <option value="gryffindor">Gryffindor</option>
+                <option value="slytherin">Slytherin</option>
+                <option value="hufflepuf">Hufflepuf</option>
+                <option value="ravenclaw">Ravenclaw</option>
+            </select>
+        </div>
+        <div>
+            <label for="Consent">I hereby state that I have companion</label>
+            <input id="Consent" name="Consent" type="checkbox" value="yes">
+            <fieldset>
+                <legend>Companion Pet</legend>
+                <label>Species <input name="pet-species" type="text"></label>
+                <label>Name <input name="species-name" id="species-name" type="text"></label>
+            </fieldset>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" pattern=".*@hogwarts\.ac\.uk" title="Please provide an email address ending with @hogwarts.ac.uk">
+        </div>
+        <div>
+            <label for="comment">Comment</label>
+            <textarea name="comment" id="comment" rows="5" placeholder="e.g I would like to be selected for Triwizard Tournament"></textarea>
+        </div>
+        <button type="sybmit">Submit</button>
+    </format>
+</body>
+</html>
