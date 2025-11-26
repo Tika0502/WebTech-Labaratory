@@ -1,0 +1,78 @@
+body {
+    background-color: indigo;
+    margin: 0;
+}
+
+div.cards {
+    /* border: thin solid red; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+div.card:is([data-suite=hearts],[data-suite=diamonds]) {
+    color: red;
+}
+
+div.card:is([data-suite=spades],[data-suite=clubs]) {
+    color: black;
+}
+
+span.center{
+    font-size: 400%;
+}
+
+span:is(.topleft, .bottomleft) {
+    font-size: 200%;
+    padding: 0.25rem;
+    text-align: center;
+}
+
+span.topleft {
+    align-self: flex-start;
+}
+
+span.bottomleft {
+    align-self: flex-end;
+    transform: rotate(180deg)
+}
+
+div.card {
+    align-items: center;
+    background-color: white;
+    border: solid medium black;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    display: flex;
+    height: 3.5in;
+    width: 2.5in;
+    justify-content: space-between;
+}
+
+/* @media (min-width: calc(10in 5rem)) {
+    div.cards {
+        flex-direction: row;
+    }
+} */
+
+div.card[data-rank=ace] span.rank::before {
+    content: "A";
+}
+
+div.card[data-suite=spades] span.suite::before {
+    content: "\2660";
+}
+
+div.card[data-suite=hearts] span.suite::before {
+    content: "\2665";
+}
+
+div.card[data-suite=clubs] span.suite::before {
+    content: "\2663";
+}
+
+div.card[data-suite=diamonds] span.suite::before {
+    content: "\2666";
+}
