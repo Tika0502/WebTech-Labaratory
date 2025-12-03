@@ -1,0 +1,126 @@
+body {
+    align-items: center;
+    display: flex;
+    font-family: sans-serif;
+    height: 100vh;
+    justify-content: center;
+    margin: 0;
+}
+
+div#grid {
+    aspect-ratio: 4/5;
+    background-color: #999;
+    display: grid;
+    height: 50vh;
+    width: 40vh;
+    padding: 4px;
+    gap: 4px;
+    box-sizing: border-box;
+    grid-template-areas: 
+        "A A A B"
+        "C C D E"
+        "F . G E"
+        "F H H E"
+        "I J J K";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    border: solid thin #222;
+}
+
+#lavender {
+    grid-area: A;
+}
+
+#lightgreen1 {
+    grid-area: C;
+}
+
+#yellow1 {
+    grid-area: B;
+}
+
+#yellow2 {
+    grid-area: D;
+}
+
+#pink {
+    grid-area: E;
+}
+
+#plum {
+    grid-area: F;
+}
+
+#yellow3 {
+    grid-area: G;
+}
+
+#lightgreen2 {
+    grid-area: H;
+}
+
+#coral {
+    grid-area: I;
+}
+
+#lightgreen3 {
+    grid-area: J;
+}
+
+#yellow4 {
+    grid-area: K;
+}
+
+/* div#lavender { */
+    /* display: grid; */
+    /* justify-content: right; */
+    /* align-items: flex-start; */
+    /* width: 28vh; */
+    /* height: 10vh; */
+    /* border: solid thin #777; */
+    /* margin: 0.5%; */
+/* } */
+
+/* div#yellow1 { */
+    /* display: grid; */
+    /* justify-content: flex-end; */
+    /* align-items: flex-start; */
+    /* width: 10vh; */
+    /* height: 10vh; */
+/* } */
+
+.lavender {
+    background-color: lavender;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.pink {
+    background-color: pink;
+}
+
+.plum {
+    background-color: plum;
+}
+
+.lightgreen {
+    background-color: lightgreen;
+}
+
+.coral {
+    background-color: coral;
+}
+
+div#grid > div {
+    align-items: center;
+    border: 4px solid #555;
+    display: flex;
+    justify-content: center;
+    border-radius: 0.25em;
+}
+
+div#grid > div[class]::before {
+    content: attr(); 
+}
